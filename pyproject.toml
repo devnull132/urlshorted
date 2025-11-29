@@ -1,0 +1,18 @@
+[project]
+name = "urlshorted"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "GL1KK",email = "danya_serov05@internet.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[all] (>=0.121.3,<0.122.0)",
+    "sqlalchemy (>=2.0.44,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
