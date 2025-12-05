@@ -15,10 +15,6 @@ session = async_sessionmaker(engine)
 intpk = Annotated[int, mapped_column(primary_key=True)]
 
 created_at = Annotated[datetime, mapped_column(server_default=text("now()"))]
-updated_at = Annotated[datetime, mapped_column(
-    server_default=text("now()"), 
-    onupdate=datetime.now  
-)]
 
 class Base(DeclarativeBase):    
     pass

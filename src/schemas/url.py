@@ -1,11 +1,11 @@
 from pydantic import BaseModel, HttpUrl  
-from datetime import datetime 
 
-class UrlShortedResponse(BaseModel):
-    def_address: str 
+class ShortUrlResponse(BaseModel):
+    code: str
     url: str 
-    expires_at: datetime 
-    url_from_stat: str 
+    def_address: str
+    created_at: str    
+    expires_at: str
 
 class GetDefAddress(BaseModel):
     def_address: HttpUrl
